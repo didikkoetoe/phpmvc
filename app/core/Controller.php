@@ -1,0 +1,11 @@
+<?php 
+
+/**
+ * Controller
+ */
+class Controller
+{
+	
+}
+
+ ?>
