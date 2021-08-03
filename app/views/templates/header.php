@@ -18,6 +18,7 @@
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>/1">Home</a>
                 <a class="nav-link" href="<?= BASEURL; ?>/about">About Me</a>
+                <a class="nav-link" href="<?= BASEURL; ?>/programmer">Programmer</a>
             </div>
         </div>
     </div>
