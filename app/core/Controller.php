@@ -1,11 +1,9 @@
-<?php 
+<?php
 
 class Controller
 {
-	function __construct()
+	public function view($view, $data = [])
 	{
-		$this->foo = $foo;
+		require_once '../app/views/' . $view . '.php';
 	}
 }
-
- ?>
