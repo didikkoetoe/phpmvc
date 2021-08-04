@@ -11,6 +11,10 @@ class App
 	{
 		$url = $this->parseUrl();
 
+		// Cek apakah url null atau tidak
+		if ($url === NULL) {
+			$url = [$this->controller];
+		}
 		// Controller
 		if (file_exists("../app/controllers/" . $url[0] . ".php")) {
 			$this->controller = $url[0];
