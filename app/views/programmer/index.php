@@ -3,14 +3,13 @@
         <div class="col-8">
             <h2>Daftar Programmer</h2>
 
-            <?php foreach ($data["programmer"] as $prg) : ?>
-                <ul>
-                    <li><?= $prg["nama"]; ?></li>
-                    <li><?= $prg["alamat"]; ?></li>
-                    <li><?= $prg["jurusan"]; ?></li>
-                    <li><?= $prg["umur"]; ?></li>
-                </ul>
-            <?php endforeach; ?>
+            <ul class="list-group">
+                <?php foreach ($data["programmer"] as $prg) : ?>
+                    <li class="list-group-item  d-flex justify-content-between align-items-center"><?= $prg['nama']; ?>
+                        <a href="<?= BASEURL; ?>/programmer/detail/<?= $prg['id']; ?>" class="badge bg-primary">detail</a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </div>
 </div>
