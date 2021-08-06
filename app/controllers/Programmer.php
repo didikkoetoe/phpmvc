@@ -19,4 +19,12 @@ class Programmer extends Controller
         $this->view("programmer/detail", $data);
         $this->view("templates/footer");
     }
+
+    public function tambah()
+    {
+        if ($this->model('Programmer_model')->tambahDataPrg($_POST) > 0) {
+            header('Location:' . BASEURL . '/programmer');
+            exit;
+        }
+    }
 }
