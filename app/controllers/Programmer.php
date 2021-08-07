@@ -23,6 +23,11 @@ class Programmer extends Controller
     public function tambah()
     {
         if ($this->model('Programmer_model')->tambahDataPrg($_POST) > 0) {
+            Flasher::setFlasher('berhasil', 'ditambahkan', 'success');
+            header('Location:' . BASEURL . '/programmer');
+            exit;
+        } else {
+            Flasher::setFlasher('gagal', 'ditambahkan', 'danger');
             header('Location:' . BASEURL . '/programmer');
             exit;
         }
