@@ -28,7 +28,7 @@ class Programmer extends Controller
             exit;
         } else {
             Flasher::setFlasher('gagal', 'ditambahkan', 'danger');
-            header('Location:' . BASEURL . '/programmer');
+            header('Location:' . BASEURL . '/Programmer');
             exit;
         }
     }
