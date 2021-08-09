@@ -25,8 +25,7 @@ class Programmer_model
 
     public function tambahDataPrg($data)
     {
-        $query = "INSERT INTO programmer VALUES
-        ('', :nama , :email , :alamat , :umur)";
+        $query = "INSERT INTO programmer ( nama, email , alamat, umur) VALUES (:nama , :email , :alamat , :umur)";
 
         $this->db->query($query);
         $this->db->bind('nama', $data["nama"]);
