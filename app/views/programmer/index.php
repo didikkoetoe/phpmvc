@@ -15,7 +15,7 @@
             <ul class="list-group">
                 <?php foreach ($data["programmer"] as $prg) : ?>
                     <li class="list-group-item  d-flex justify-content-between align-items-center"><?= $prg['nama']; ?>
-                        <a href="<?= BASEURL; ?>/programmer/detail/<?= $prg['id']; ?>" class="badge bg-primary">detail</a>
+                        <a href="<?= BASEURL; ?>/Programmer/detail/<?= $prg['id']; ?>" class="badge bg-primary">detail</a>
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -33,23 +33,18 @@
             </div>
             <div class="modal-body">
 
-                <form action="<?= BASEURL; ?>/programmer/tambah" method="POST">
+                <form action="<?= BASEURL; ?>/Programmer/tambah" method="POST">
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama Programmer</label>
                         <input type="text" class="form-control" id="nama" name="nama">
                     </div>
                     <div class="mb-3">
-                        <label for="alamat" class="form-label">Alamat</label>
-                        <input type="text" class="form-control" id="alamat" name="alamat">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="jurusan" class="form-label">Jurusan</label>
-                        <select class="form-select" aria-label="Default select example" id="jurusan" name="jurusan">
-                            <option value="Teknik Informatika">Teknik Informatika</option>
-                            <option value="Teknik Informasi">Teknik Informasi</option>
-                            <option value="Teknik Industri">Teknik Industri</option>
-                            <option value="Psikologi">Psikologi</option>
-                        </select>
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <input type="text" name="alamat" id="alamat" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="umur" class="form-label">Umur</label>

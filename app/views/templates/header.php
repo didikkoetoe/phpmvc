@@ -17,8 +17,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="<?= BASEURL; ?>">Home</a>
-                <a class="nav-link" href="<?= BASEURL; ?>/about">About Me</a>
-                <a class="nav-link" href="<?= BASEURL; ?>/programmer">Programmer</a>
+                <a class="nav-link" href="<?= BASEURL; ?>/About">About Me</a>
+                <a class="nav-link" href="<?= BASEURL; ?>/Programmer">Programmer</a>
             </div>
         </div>
     </div>

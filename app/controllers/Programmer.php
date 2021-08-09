@@ -24,7 +24,7 @@ class Programmer extends Controller
     {
         if ($this->model('Programmer_model')->tambahDataPrg($_POST) > 0) {
             Flasher::setFlasher('berhasil', 'ditambahkan', 'success');
-            header('Location:' . BASEURL . '/programmer');
+            header('Location:' . BASEURL . '/Programmer');
             exit;
         } else {
             Flasher::setFlasher('gagal', 'ditambahkan', 'danger');

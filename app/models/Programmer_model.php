@@ -26,12 +26,12 @@ class Programmer_model
     public function tambahDataPrg($data)
     {
         $query = "INSERT INTO programmer VALUES
-        ('', :nama , :alamat , :jurusan , :umur)";
+        ('', :nama , :email , :alamat , :umur)";
 
         $this->db->query($query);
         $this->db->bind('nama', $data["nama"]);
+        $this->db->bind('email', $data["email"]);
         $this->db->bind('alamat', $data["alamat"]);
-        $this->db->bind('jurusan', $data["jurusan"]);
         $this->db->bind('umur', $data["umur"]);
 
         $this->db->execute();
