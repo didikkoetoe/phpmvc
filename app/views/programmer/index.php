@@ -14,8 +14,9 @@
 
             <ul class="list-group">
                 <?php foreach ($data["programmer"] as $prg) : ?>
-                    <li class="list-group-item  d-flex justify-content-between align-items-center"><?= $prg['nama']; ?>
-                        <a href="<?= BASEURL; ?>/Programmer/detail/<?= $prg['id']; ?>" class="badge bg-primary">detail</a>
+                    <li class="list-group-item"><?= $prg['nama']; ?>
+                        <a href="<?= BASEURL; ?>/Programmer/hapus/<?= $prg['id']; ?>" class="badge bg-danger float-end" onclick="return confirm('Yakin ?')">hapus</a>
+                        <a href="<?= BASEURL; ?>/Programmer/detail/<?= $prg['id']; ?>" class="badge bg-primary float-end me-2">detail</a>
                     </li>
                 <?php endforeach; ?>
             </ul>
