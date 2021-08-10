@@ -37,4 +37,15 @@ class Programmer_model
 
         return $this->db->rowCount();
     }
+
+    public function hapusDataPrg($id)
+    {
+        $query = "DELETE FROM programmer WHERE id = :id";
+        $this->db->query($query);
+        $this->db->bind('id', $id);
+
+        $this->db->execute();
+
+        return $this->db->rowCount();
+    }
 }
