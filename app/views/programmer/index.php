@@ -36,19 +36,19 @@
                 <form action="<?= BASEURL; ?>/Programmer/tambah" method="POST">
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama Programmer</label>
-                        <input type="text" class="form-control" id="nama" name="nama">
+                        <input type="text" class="form-control" id="nama" name="nama" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email">
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="alamat" class="form-label">Alamat</label>
-                        <input type="text" name="alamat" id="alamat" class="form-control">
+                        <input type="text" name="alamat" id="alamat" class="form-control" required>
                     </div>
                     <div class="mb-3">
                         <label for="umur" class="form-label">Umur</label>
-                        <input type="number" class="form-control" id="umur" name="umur">
+                        <input type="number" class="form-control" id="umur" name="umur" required>
                     </div>
 
             </div>
