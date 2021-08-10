@@ -32,4 +32,17 @@ class Programmer extends Controller
             exit;
         }
     }
+
+    public function hapus($id)
+    {
+        if ($this->model('Programmer_model')->hapusDataPrg($id) > 0) {
+            Flasher::setFlasher('berhasil', 'dihapus', 'success');
+            header('Location:' . BASEURL . '/Programmer');
+            exit;
+        } else {
+            Flasher::setFlasher('gagal', 'dihapus', 'danger');
+            header('Location:' . BASEURL . '/Programmer');
+            exit;
+        }
+    }
 }
